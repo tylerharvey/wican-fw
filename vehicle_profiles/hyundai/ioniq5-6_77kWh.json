@@ -1,5 +1,5 @@
 {
-  "car_model": "Hyundai: Ioniq5/Ioniq6 w/ 77kWh pack",
+  "car_model": "Hyundai: Ioniq5/Ioniq6",
   "init": "ATSH7E4;ATST96;",
   "pids": [
     {
@@ -72,106 +72,106 @@
       "parameters": {
         "SPEED": "B38"
       }
-    }
+    },
     {
       "pid" : "220102",
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Cell Voltage 001",
-          "expression" : "B9/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 002",
           "expression" : "B10/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 003",
+          "name" : "000_Cell Voltage 002",
           "expression" : "B11/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 004",
+          "name" : "000_Cell Voltage 003",
           "expression" : "B12/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 005",
+          "name" : "000_Cell Voltage 004",
           "expression" : "B13/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 006",
+          "name" : "000_Cell Voltage 005",
           "expression" : "B14/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 007",
+          "name" : "000_Cell Voltage 006",
           "expression" : "B15/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 008",
-          "expression" : "B16/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 009",
+          "name" : "000_Cell Voltage 007",
           "expression" : "B17/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 010",
+          "name" : "000_Cell Voltage 008",
           "expression" : "B18/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 011",
+          "name" : "000_Cell Voltage 009",
           "expression" : "B19/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 012",
+          "name" : "000_Cell Voltage 010",
           "expression" : "B20/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 013",
+          "name" : "000_Cell Voltage 011",
           "expression" : "B21/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 014",
+          "name" : "000_Cell Voltage 012",
           "expression" : "B22/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 015",
+          "name" : "000_Cell Voltage 013",
           "expression" : "B23/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 016",
-          "expression" : "B24/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 017",
+          "name" : "000_Cell Voltage 014",
           "expression" : "B25/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 018",
+          "name" : "000_Cell Voltage 015",
           "expression" : "B26/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 019",
+          "name" : "000_Cell Voltage 016",
           "expression" : "B27/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 020",
+          "name" : "000_Cell Voltage 017",
           "expression" : "B28/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 021",
+          "name" : "000_Cell Voltage 018",
           "expression" : "B29/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 022",
+          "name" : "000_Cell Voltage 019",
           "expression" : "B30/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 023",
+          "name" : "000_Cell Voltage 020",
           "expression" : "B31/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 024",
-          "expression" : "B32/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 025",
+          "name" : "000_Cell Voltage 021",
           "expression" : "B33/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 026",
+          "name" : "000_Cell Voltage 022",
           "expression" : "B34/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 027",
+          "name" : "000_Cell Voltage 023",
           "expression" : "B35/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 028",
+          "name" : "000_Cell Voltage 024",
           "expression" : "B36/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 029",
+          "name" : "000_Cell Voltage 025",
           "expression" : "B37/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 030",
+          "name" : "000_Cell Voltage 026",
           "expression" : "B38/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 031",
+          "name" : "000_Cell Voltage 027",
           "expression" : "B39/50",
           "unit" : "V" },        {
+          "name" : "000_Cell Voltage 028",
+          "expression" : "B41/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 029",
+          "expression" : "B42/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 030",
+          "expression" : "B43/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 031",
+          "expression" : "B44/50",
+          "unit" : "V" },        {
           "name" : "000_Cell Voltage 032",
-          "expression" : "B40/50",
+          "expression" : "B45/50",
           "unit" : "V" } 
     },
     {
@@ -179,100 +179,100 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Cell Voltage 033",
-          "expression" : "B9/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 034",
           "expression" : "B10/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 035",
+          "name" : "000_Cell Voltage 034",
           "expression" : "B11/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 036",
+          "name" : "000_Cell Voltage 035",
           "expression" : "B12/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 037",
+          "name" : "000_Cell Voltage 036",
           "expression" : "B13/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 038",
+          "name" : "000_Cell Voltage 037",
           "expression" : "B14/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 039",
+          "name" : "000_Cell Voltage 038",
           "expression" : "B15/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 040",
-          "expression" : "B16/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 041",
+          "name" : "000_Cell Voltage 039",
           "expression" : "B17/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 042",
+          "name" : "000_Cell Voltage 040",
           "expression" : "B18/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 043",
+          "name" : "000_Cell Voltage 041",
           "expression" : "B19/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 044",
+          "name" : "000_Cell Voltage 042",
           "expression" : "B20/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 045",
+          "name" : "000_Cell Voltage 043",
           "expression" : "B21/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 046",
+          "name" : "000_Cell Voltage 044",
           "expression" : "B22/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 047",
+          "name" : "000_Cell Voltage 045",
           "expression" : "B23/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 048",
-          "expression" : "B24/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 049",
+          "name" : "000_Cell Voltage 046",
           "expression" : "B25/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 050",
+          "name" : "000_Cell Voltage 047",
           "expression" : "B26/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 051",
+          "name" : "000_Cell Voltage 048",
           "expression" : "B27/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 052",
+          "name" : "000_Cell Voltage 049",
           "expression" : "B28/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 053",
+          "name" : "000_Cell Voltage 050",
           "expression" : "B29/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 054",
+          "name" : "000_Cell Voltage 051",
           "expression" : "B30/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 055",
+          "name" : "000_Cell Voltage 052",
           "expression" : "B31/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 056",
-          "expression" : "B32/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 057",
+          "name" : "000_Cell Voltage 053",
           "expression" : "B33/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 058",
+          "name" : "000_Cell Voltage 054",
           "expression" : "B34/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 059",
+          "name" : "000_Cell Voltage 055",
           "expression" : "B35/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 060",
+          "name" : "000_Cell Voltage 056",
           "expression" : "B36/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 061",
+          "name" : "000_Cell Voltage 057",
           "expression" : "B37/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 062",
+          "name" : "000_Cell Voltage 058",
           "expression" : "B38/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 063",
+          "name" : "000_Cell Voltage 059",
           "expression" : "B39/50",
           "unit" : "V" },        {
+          "name" : "000_Cell Voltage 060",
+          "expression" : "B41/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 061",
+          "expression" : "B42/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 062",
+          "expression" : "B43/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 063",
+          "expression" : "B44/50",
+          "unit" : "V" },        {
           "name" : "000_Cell Voltage 064",
-          "expression" : "B40/50",
+          "expression" : "B45/50",
           "unit" : "V" } 
     },
     {
@@ -280,100 +280,100 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Cell Voltage 065",
-          "expression" : "B9/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 066",
           "expression" : "B10/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 067",
+          "name" : "000_Cell Voltage 066",
           "expression" : "B11/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 068",
+          "name" : "000_Cell Voltage 067",
           "expression" : "B12/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 069",
+          "name" : "000_Cell Voltage 068",
           "expression" : "B13/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 070",
+          "name" : "000_Cell Voltage 069",
           "expression" : "B14/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 071",
+          "name" : "000_Cell Voltage 070",
           "expression" : "B15/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 072",
-          "expression" : "B16/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 073",
+          "name" : "000_Cell Voltage 071",
           "expression" : "B17/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 074",
+          "name" : "000_Cell Voltage 072",
           "expression" : "B18/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 075",
+          "name" : "000_Cell Voltage 073",
           "expression" : "B19/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 076",
+          "name" : "000_Cell Voltage 074",
           "expression" : "B20/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 077",
+          "name" : "000_Cell Voltage 075",
           "expression" : "B21/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 078",
+          "name" : "000_Cell Voltage 076",
           "expression" : "B22/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 079",
+          "name" : "000_Cell Voltage 077",
           "expression" : "B23/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 080",
-          "expression" : "B24/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 081",
+          "name" : "000_Cell Voltage 078",
           "expression" : "B25/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 082",
+          "name" : "000_Cell Voltage 079",
           "expression" : "B26/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 083",
+          "name" : "000_Cell Voltage 080",
           "expression" : "B27/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 084",
+          "name" : "000_Cell Voltage 081",
           "expression" : "B28/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 085",
+          "name" : "000_Cell Voltage 082",
           "expression" : "B29/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 086",
+          "name" : "000_Cell Voltage 083",
           "expression" : "B30/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 087",
+          "name" : "000_Cell Voltage 084",
           "expression" : "B31/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 088",
-          "expression" : "B32/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 089",
+          "name" : "000_Cell Voltage 085",
           "expression" : "B33/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 090",
+          "name" : "000_Cell Voltage 086",
           "expression" : "B34/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 091",
+          "name" : "000_Cell Voltage 087",
           "expression" : "B35/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 092",
+          "name" : "000_Cell Voltage 088",
           "expression" : "B36/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 093",
+          "name" : "000_Cell Voltage 089",
           "expression" : "B37/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 094",
+          "name" : "000_Cell Voltage 090",
           "expression" : "B38/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 095",
+          "name" : "000_Cell Voltage 091",
           "expression" : "B39/50",
           "unit" : "V" },        {
+          "name" : "000_Cell Voltage 092",
+          "expression" : "B41/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 093",
+          "expression" : "B42/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 094",
+          "expression" : "B43/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 095",
+          "expression" : "B44/50",
+          "unit" : "V" },        {
           "name" : "000_Cell Voltage 096",
-          "expression" : "B40/50",
+          "expression" : "B45/50",
           "unit" : "V" } 
     },
     {
@@ -381,100 +381,100 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Cell Voltage 097",
-          "expression" : "B9/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 098",
           "expression" : "B10/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 099",
+          "name" : "000_Cell Voltage 098",
           "expression" : "B11/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 100",
+          "name" : "000_Cell Voltage 099",
           "expression" : "B12/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 101",
+          "name" : "000_Cell Voltage 100",
           "expression" : "B13/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 102",
+          "name" : "000_Cell Voltage 101",
           "expression" : "B14/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 103",
+          "name" : "000_Cell Voltage 102",
           "expression" : "B15/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 104",
-          "expression" : "B16/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 105",
+          "name" : "000_Cell Voltage 103",
           "expression" : "B17/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 106",
+          "name" : "000_Cell Voltage 104",
           "expression" : "B18/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 107",
+          "name" : "000_Cell Voltage 105",
           "expression" : "B19/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 108",
+          "name" : "000_Cell Voltage 106",
           "expression" : "B20/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 109",
+          "name" : "000_Cell Voltage 107",
           "expression" : "B21/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 110",
+          "name" : "000_Cell Voltage 108",
           "expression" : "B22/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 111",
+          "name" : "000_Cell Voltage 109",
           "expression" : "B23/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 112",
-          "expression" : "B24/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 113",
+          "name" : "000_Cell Voltage 110",
           "expression" : "B25/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 114",
+          "name" : "000_Cell Voltage 111",
           "expression" : "B26/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 115",
+          "name" : "000_Cell Voltage 112",
           "expression" : "B27/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 116",
+          "name" : "000_Cell Voltage 113",
           "expression" : "B28/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 117",
+          "name" : "000_Cell Voltage 114",
           "expression" : "B29/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 118",
+          "name" : "000_Cell Voltage 115",
           "expression" : "B30/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 119",
+          "name" : "000_Cell Voltage 116",
           "expression" : "B31/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 120",
-          "expression" : "B32/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 121",
+          "name" : "000_Cell Voltage 117",
           "expression" : "B33/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 122",
+          "name" : "000_Cell Voltage 118",
           "expression" : "B34/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 123",
+          "name" : "000_Cell Voltage 119",
           "expression" : "B35/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 124",
+          "name" : "000_Cell Voltage 120",
           "expression" : "B36/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 125",
+          "name" : "000_Cell Voltage 121",
           "expression" : "B37/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 126",
+          "name" : "000_Cell Voltage 122",
           "expression" : "B38/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 127",
+          "name" : "000_Cell Voltage 123",
           "expression" : "B39/50",
           "unit" : "V" },        {
+          "name" : "000_Cell Voltage 124",
+          "expression" : "B41/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 125",
+          "expression" : "B42/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 126",
+          "expression" : "B43/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 127",
+          "expression" : "B44/50",
+          "unit" : "V" },        {
           "name" : "000_Cell Voltage 128",
-          "expression" : "B40/50",
+          "expression" : "B45/50",
           "unit" : "V" } 
     },
     {
@@ -482,100 +482,100 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Cell Voltage 129",
-          "expression" : "B9/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 130",
           "expression" : "B10/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 131",
+          "name" : "000_Cell Voltage 130",
           "expression" : "B11/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 132",
+          "name" : "000_Cell Voltage 131",
           "expression" : "B12/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 133",
+          "name" : "000_Cell Voltage 132",
           "expression" : "B13/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 134",
+          "name" : "000_Cell Voltage 133",
           "expression" : "B14/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 135",
+          "name" : "000_Cell Voltage 134",
           "expression" : "B15/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 136",
-          "expression" : "B16/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 137",
+          "name" : "000_Cell Voltage 135",
           "expression" : "B17/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 138",
+          "name" : "000_Cell Voltage 136",
           "expression" : "B18/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 139",
+          "name" : "000_Cell Voltage 137",
           "expression" : "B19/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 140",
+          "name" : "000_Cell Voltage 138",
           "expression" : "B20/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 141",
+          "name" : "000_Cell Voltage 139",
           "expression" : "B21/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 142",
+          "name" : "000_Cell Voltage 140",
           "expression" : "B22/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 143",
+          "name" : "000_Cell Voltage 141",
           "expression" : "B23/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 144",
-          "expression" : "B24/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 145",
+          "name" : "000_Cell Voltage 142",
           "expression" : "B25/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 146",
+          "name" : "000_Cell Voltage 143",
           "expression" : "B26/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 147",
+          "name" : "000_Cell Voltage 144",
           "expression" : "B27/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 148",
+          "name" : "000_Cell Voltage 145",
           "expression" : "B28/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 149",
+          "name" : "000_Cell Voltage 146",
           "expression" : "B29/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 150",
+          "name" : "000_Cell Voltage 147",
           "expression" : "B30/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 151",
+          "name" : "000_Cell Voltage 148",
           "expression" : "B31/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 152",
-          "expression" : "B32/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 153",
+          "name" : "000_Cell Voltage 149",
           "expression" : "B33/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 154",
+          "name" : "000_Cell Voltage 150",
           "expression" : "B34/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 155",
+          "name" : "000_Cell Voltage 151",
           "expression" : "B35/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 156",
+          "name" : "000_Cell Voltage 152",
           "expression" : "B36/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 157",
+          "name" : "000_Cell Voltage 153",
           "expression" : "B37/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 158",
+          "name" : "000_Cell Voltage 154",
           "expression" : "B38/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 159",
+          "name" : "000_Cell Voltage 155",
           "expression" : "B39/50",
           "unit" : "V" },        {
+          "name" : "000_Cell Voltage 156",
+          "expression" : "B41/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 157",
+          "expression" : "B42/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 158",
+          "expression" : "B43/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 159",
+          "expression" : "B44/50",
+          "unit" : "V" },        {
           "name" : "000_Cell Voltage 160",
-          "expression" : "B40/50",
+          "expression" : "B45/50",
           "unit" : "V" } 
     },
     {
@@ -583,100 +583,100 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Cell Voltage 161",
-          "expression" : "B9/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 162",
           "expression" : "B10/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 163",
+          "name" : "000_Cell Voltage 162",
           "expression" : "B11/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 164",
+          "name" : "000_Cell Voltage 163",
           "expression" : "B12/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 165",
+          "name" : "000_Cell Voltage 164",
           "expression" : "B13/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 166",
+          "name" : "000_Cell Voltage 165",
           "expression" : "B14/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 167",
+          "name" : "000_Cell Voltage 166",
           "expression" : "B15/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 168",
-          "expression" : "B16/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 169",
+          "name" : "000_Cell Voltage 167",
           "expression" : "B17/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 170",
+          "name" : "000_Cell Voltage 168",
           "expression" : "B18/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 171",
+          "name" : "000_Cell Voltage 169",
           "expression" : "B19/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 172",
+          "name" : "000_Cell Voltage 170",
           "expression" : "B20/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 173",
+          "name" : "000_Cell Voltage 171",
           "expression" : "B21/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 174",
+          "name" : "000_Cell Voltage 172",
           "expression" : "B22/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 175",
+          "name" : "000_Cell Voltage 173",
           "expression" : "B23/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 176",
-          "expression" : "B24/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 177",
+          "name" : "000_Cell Voltage 174",
           "expression" : "B25/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 178",
+          "name" : "000_Cell Voltage 175",
           "expression" : "B26/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 179",
+          "name" : "000_Cell Voltage 176",
           "expression" : "B27/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 180",
+          "name" : "000_Cell Voltage 177",
           "expression" : "B28/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 181",
+          "name" : "000_Cell Voltage 178",
           "expression" : "B29/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 182",
+          "name" : "000_Cell Voltage 179",
           "expression" : "B30/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 183",
+          "name" : "000_Cell Voltage 180",
           "expression" : "B31/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 184",
-          "expression" : "B32/50",
-          "unit" : "V" },        {
-          "name" : "000_Cell Voltage 185",
+          "name" : "000_Cell Voltage 181",
           "expression" : "B33/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 186",
+          "name" : "000_Cell Voltage 182",
           "expression" : "B34/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 187",
+          "name" : "000_Cell Voltage 183",
           "expression" : "B35/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 188",
+          "name" : "000_Cell Voltage 184",
           "expression" : "B36/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 189",
+          "name" : "000_Cell Voltage 185",
           "expression" : "B37/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 190",
+          "name" : "000_Cell Voltage 186",
           "expression" : "B38/50",
           "unit" : "V" },        {
-          "name" : "000_Cell Voltage 191",
+          "name" : "000_Cell Voltage 187",
           "expression" : "B39/50",
           "unit" : "V" },        {
+          "name" : "000_Cell Voltage 188",
+          "expression" : "B41/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 189",
+          "expression" : "B42/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 190",
+          "expression" : "B43/50",
+          "unit" : "V" },        {
+          "name" : "000_Cell Voltage 191",
+          "expression" : "B44/50",
+          "unit" : "V" },        {
           "name" : "000_Cell Voltage 192",
-          "expression" : "B40/50",
+          "expression" : "B45/50",
           "unit" : "V" } 
     },
     {
@@ -684,13 +684,13 @@
       "pid_init" : "ATSH7B3",
       "parameters" :         {
           "name" : "001_Outdoor Temperature",
-          "expression" : "(B11/2)-40",
+          "expression" : "(B12/2)-40",
           "unit" : "C" },        {
           "name" : "001_Indoor Temperature",
-          "expression" : "(B10/2)-40",
+          "expression" : "(B11/2)-40",
           "unit" : "C" },        {
           "name" : "001_Real Vehicle Speed",
-          "expression" : "B34",
+          "expression" : "B38",
           "unit" : "kmh" } 
     },
     {
@@ -698,70 +698,70 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Airbag H/wire Duty",
-          "expression" : "B27",
+          "expression" : "B30",
           "unit" : "" },        {
           "name" : "000_Available Charge Power",
-          "expression" : "((B21<8)+B22)/100",
+          "expression" : "((B23<8)+B25)/100",
           "unit" : "kW" },        {
           "name" : "000_Available Discharge Power",
-          "expression" : "((B23<8)+B24)/100",
+          "expression" : "((B26<8)+B27)/100",
           "unit" : "kW" },        {
           "name" : "000_Battery Cell Voltage Deviation",
-          "expression" : "B25/50",
+          "expression" : "B28/50",
           "unit" : "V" },        {
           "name" : "000_Battery Heater 1 Temperature",
-          "expression" : "Signed(B28)",
+          "expression" : "Signed(B31)",
           "unit" : "C" },        {
           "name" : "000_Battery Pack B06",
-          "expression" : "Signed(B14)",
-          "unit" : "C" },        {
-          "name" : "000_Battery Pack B07",
           "expression" : "Signed(B15)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B08",
-          "expression" : "Signed(B16)",
-          "unit" : "C" },        {
-          "name" : "000_Battery Pack B09",
+          "name" : "000_Battery Pack B07",
           "expression" : "Signed(B17)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B10",
+          "name" : "000_Battery Pack B08",
           "expression" : "Signed(B18)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B11",
+          "name" : "000_Battery Pack B09",
           "expression" : "Signed(B19)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B12",
+          "name" : "000_Battery Pack B10",
           "expression" : "Signed(B20)",
           "unit" : "C" },        {
+          "name" : "000_Battery Pack B11",
+          "expression" : "Signed(B21)",
+          "unit" : "C" },        {
+          "name" : "000_Battery Pack B12",
+          "expression" : "Signed(B22)",
+          "unit" : "C" },        {
           "name" : "000_Battery Pack B13",
-          "expression" : "Signed(B44)",
+          "expression" : "Signed(B50)",
           "unit" : "C" },        {
           "name" : "000_Battery Pack B14",
-          "expression" : "Signed(B45)",
+          "expression" : "Signed(B51)",
           "unit" : "C" },        {
           "name" : "000_Battery Pack B15",
-          "expression" : "Signed(B46)",
+          "expression" : "Signed(B52)",
           "unit" : "C" },        {
           "name" : "000_Battery Pack B16",
-          "expression" : "Signed(B47)",
+          "expression" : "Signed(B53)",
           "unit" : "C" },        {
           "name" : "000_Battery Remaining Energy",
-          "expression" : "((B33 < 8) + B34) *2",
+          "expression" : "((B37 < 8) + B38) *2",
           "unit" : "Wh" },        {
           "name" : "000_Maximum Deterioration Cell No",
-          "expression" : "B32",
+          "expression" : "B36",
           "unit" : "" },        {
           "name" : "000_Minimum Deterioration",
-          "expression" : "((B33<8)+B34)/10",
+          "expression" : "((B37<8)+B38)/10",
           "unit" : "%" },        {
           "name" : "000_Minimum Deterioration Cell No",
-          "expression" : "B35",
+          "expression" : "B39",
           "unit" : "" },        {
           "name" : "000_State of Charge Display",
-          "expression" : "B36/2",
+          "expression" : "B41/2",
           "unit" : "%" },        {
           "name" : "000_State of Health",
-          "expression" : "((B30<8)+B31)/10",
+          "expression" : "((B34<8)+B35)/10",
           "unit" : "%" } 
     },
     {
@@ -769,52 +769,52 @@
       "pid_init" : "ATSH7E4",
       "parameters" :         {
           "name" : "000_Auxillary Battery Voltage",
-          "expression" : "B34*0.1",
+          "expression" : "B38*0.1",
           "unit" : "V" },        {
           "name" : "000_Battery Current",
-          "expression" : "((Signed(B15)*256)+B16)/10",
+          "expression" : "((Signed(B17)*256)+B18)/10",
           "unit" : "A" },        {
           "name" : "000_Battery DC Voltage",
-          "expression" : "((B17<8)+B18)/10",
+          "expression" : "((B19<8)+B20)/10",
           "unit" : "V" },        {
           "name" : "000_Battery Max Temperature",
-          "expression" : "Signed(B19)",
-          "unit" : "C" },        {
-          "name" : "000_Battery Min Temperature",
-          "expression" : "Signed(B20)",
-          "unit" : "C" },        {
-          "name" : "000_Battery Pack B01",
           "expression" : "Signed(B21)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B02",
+          "name" : "000_Battery Min Temperature",
           "expression" : "Signed(B22)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B03",
+          "name" : "000_Battery Pack B01",
           "expression" : "Signed(B23)",
           "unit" : "C" },        {
-          "name" : "000_Battery Pack B04",
-          "expression" : "Signed(B24)",
-          "unit" : "C" },        {
-          "name" : "000_Battery Pack B05",
+          "name" : "000_Battery Pack B02",
           "expression" : "Signed(B25)",
           "unit" : "C" },        {
+          "name" : "000_Battery Pack B03",
+          "expression" : "Signed(B26)",
+          "unit" : "C" },        {
+          "name" : "000_Battery Pack B04",
+          "expression" : "Signed(B27)",
+          "unit" : "C" },        {
+          "name" : "000_Battery Pack B05",
+          "expression" : "Signed(B28)",
+          "unit" : "C" },        {
           "name" : "000_BMS Ignition",
-          "expression" : "{B55:2}",
+          "expression" : "{B62:2}",
           "unit" : "" },        {
           "name" : "000_BMS Main Relay",
-          "expression" : "{B14:0}",
+          "expression" : "{B15:0}",
           "unit" : "" },        {
           "name" : "000_Cumulative Charge Current",
-          "expression" : "((B35<24)+(B36<16)+(B37<8)+B38)/10",
+          "expression" : "((B39<24)+(B41<16)+(B42<8)+B43)/10",
           "unit" : "Ah" },        {
           "name" : "000_Cumulative Discharge Current",
-          "expression" : "((B39<24)+(B40<16)+(B41<8)+B42)/10",
+          "expression" : "((B44<24)+(B45<16)+(B46<8)+B47)/10",
           "unit" : "Ah" },        {
           "name" : "000_Cumulative Energy Charged",
-          "expression" : "((B43<24)+(B44<16)+(B45<8)+B46)/10",
+          "expression" : "((B49<24)+(B50<16)+(B51<8)+B52)/10",
           "unit" : "kWh" },        {
           "name" : "000_Cumulative Energy Discharged",
-          "expression" : "((B47<24)+(B48<16)+(B49<8)+B50)/10",
+          "expression" : "((B53<24)+(B54<16)+(B55<8)+B57)/10",
           "unit" : "kWh" },        {
           "name" : "000_Drive Motor Speed Rear",
           "expression" : "(Signed(BB)*256)+BC",
@@ -823,40 +823,40 @@
           "expression" : "(Signed(BD)*256))+BE",
           "unit" : "rpm" },        {
           "name" : "000_HV_Charging",
-          "expression" : "{B14:7}",
+          "expression" : "{B15:7}",
           "unit" : "" },        {
           "name" : "000_Inverter Capacitor Voltage",
-          "expression" : "((B56<8)+ba)",
+          "expression" : "((B63<8)+ba)",
           "unit" : "V" },        {
           "name" : "000_Isolation Resistance",
           "expression" : "((bf<8)+bg)",
           "unit" : "kOhm" },        {
           "name" : "000_Maximum Cell Voltage",
-          "expression" : "B28/50",
+          "expression" : "B31/50",
           "unit" : "V" },        {
           "name" : "000_Maximum Cell Voltage No",
-          "expression" : "B29",
+          "expression" : "B33",
           "unit" : "" },        {
           "name" : "000_Minimum Cell Voltage",
-          "expression" : "B30/50",
+          "expression" : "B34/50",
           "unit" : "V" },        {
           "name" : "000_Minimum Cell Voltage No",
-          "expression" : "B31",
+          "expression" : "B35",
           "unit" : "" },        {
           "name" : "000_Normal Charge Port",
-          "expression" : "{B14:5}",
+          "expression" : "{B15:5}",
           "unit" : "" },        {
           "name" : "000_Operating Time",
-          "expression" : "((B51<24)+(B52<16)+(B53<8)+B54)/3600",
+          "expression" : "((B58<24)+(B59<16)+(B60<8)+B61)/3600",
           "unit" : "hours" },        {
           "name" : "000_Rapid Charge Port",
-          "expression" : "{B14:6}",
+          "expression" : "{B15:6}",
           "unit" : "" },        {
           "name" : "000_State of Charge BMS",
-          "expression" : "B9/2",
+          "expression" : "B10/2",
           "unit" : "%" },        {
           "name" : "000_Requested Charge Current",
-          "expression" : "((B12<8)+B13)/10",
+          "expression" : "((B13<8)+B14)/10",
           "unit" : "A" } 
     },
     {
@@ -864,7 +864,7 @@
       "pid_init" : "ATSH7E5",
       "parameters" :         {
           "name" : "000_Auxillary Battery SOC",
-          "expression" : "B25",
+          "expression" : "B28",
           "unit" : "%" } 
     },
     {
@@ -872,28 +872,28 @@
       "pid_init" : "ATSH7A0",
       "parameters" :         {
           "name" : "001_Tire Pressure Front Left",
-          "expression" : "B9/5",
+          "expression" : "B10/5",
           "unit" : "psi" },        {
           "name" : "001_Tire Pressure Front Right",
-          "expression" : "B14/5",
+          "expression" : "B15/5",
           "unit" : "psi" },        {
           "name" : "001_Tire Pressure Back Left",
-          "expression" : "B19/5",
+          "expression" : "B21/5",
           "unit" : "psi" },        {
           "name" : "001_Tire Pressure Back Right",
-          "expression" : "B24/5",
+          "expression" : "B27/5",
           "unit" : "psi" },        {
           "name" : "001_Tire Temperature Front Left",
-          "expression" : "B10-50",
+          "expression" : "B11-50",
           "unit" : "C" },        {
           "name" : "001_Tire Temperature Front Right",
-          "expression" : "B15-50",
+          "expression" : "B17-50",
           "unit" : "C" },        {
           "name" : "001_Tire Temperature Back Left",
-          "expression" : "B20-50",
+          "expression" : "B22-50",
           "unit" : "C" },        {
           "name" : "001_Tire Temperature Back Right",
-          "expression" : "B25-50",
+          "expression" : "B28-50",
           "unit" : "C" } 
     },
     {
@@ -901,10 +901,10 @@
       "pid_init" : "ATSH7C6",
       "parameters" :         {
           "name" : "001_Odometer",
-          "expression" : "Int24([B11:B12:B13])",
+          "expression" : "Int24([B12:B13:B14])",
           "unit" : "km" },        {
           "name" : "002_Odometer",
-          "expression" : "Int24([B14:B15:B16])",
+          "expression" : "Int24([B15:B17:B18])",
           "unit" : "mi" } 
     },
     {
@@ -912,7 +912,7 @@
       "pid_init" : "ATSH730",
       "parameters" :         {
           "name" : "001_Steering Angle",
-          "expression" : "(SIGNED(B18)*256+B17)/10",
+          "expression" : "(SIGNED(B20)*256+B19)/10",
           "unit" : "deg" } 
     }
   ]
