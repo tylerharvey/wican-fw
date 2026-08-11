@@ -1,30 +1,33 @@
 '''
 Python script for porting from CarScanner profiles to WiCAN json
 Run as 
-$ python CarScanner_to_WiCANjson.py <profiles_all_dump.json> "<profile name substring>"
-The script will output several files in the current directory:
-<profile_name>.json
-<profile_name>.params.json
-<profile_name>.params.definitive.json
-<profile_name>.params.uncertain.json
-<profile_name>.params.notfound.json
+$ python CarScanner_to_WiCANjson.py profiles_all_dump.json "<profile name substring>"
+The script will output several files in the current directory according to whether they match existing WiCAN shortnames in wican-fw/.vehicle_profiles/params.json:
+<profile_name>.json : the main parameter file
+<profile_name>.params.definitive.json : definitively matching an existing shortname
+<profile_name>.params.uncertain.json : may match an existing shortname
+<profile_name>.params.notfound.json : likely not in params.json
 <profile_name>.json is formatted to be merged with ./<make>/<model>.json
-<profile_name>.params.json is formatted to be merged with ../.vehicle_profiles/params.json
+<profile_name>.params.*.json is formatted to be merged with ../.vehicle_profiles/params.json
 The script also maps CarScanner parameters onto existing WiCAN parameter names from
 ../.vehicle_profiles/params.json and the existing car profiles in ../../vehicle_profiles.
-Three categorized params files are produced:
+A bit more about the categorized params files are produced:
   definitive: parameters that map to an existing WiCAN name by matching the PID
               and the response data byte (and, when several params share a byte,
-              by an exact expression match). These are safe to merge using the
-              existing WiCAN name.
+              by an exact expression match) in existing vehicle profiles. 
+              These should not need to be merged, but should be easy to check
+              against existing profiles.
   uncertain:  parameters that only match an existing WiCAN name by name, or that
-              are ambiguous at the byte level; these need manual review.
-  notfound:   parameters with no match in the existing WiCAN params.
+              are ambiguous in terms of bytes accessed; these need manual review.
+  notfound:   parameters with no match in the existing WiCAN params. These should
+              be mergeable into params.json without conflicts, but still should be
+              checked.
 Each categorized entry carries a description of the form
 "Matches CarScanner <CarScannerName>." so the source parameter can be traced.
 
-This part requires care and should be done manually and/or with help from an LLM. Blindly copy-pasting will likely produce duplicate parameters and should be avoided. There is low likelihood that the ported CarScanner short names map onto existing WiCAN shortnames. Use long names to make the mapping correctly.
-We use params.csv to map params from CarScanner names to WiCAN names. The script will skip adding params entries for any CarScanner shortname that has a mapping, so the mapping should be updated to include any existing WiCAN params that match CarScanner shortnames. The mapping is case-insensitive and will ignore spaces in the header, but should otherwise be formatted as "torque,WiCAN" with no extra columns.
+Merging with existing profiels requires care and should be done manually and/or with help from an LLM. Blindly copy-pasting will likely produce duplicate parameters and should be avoided. There is low likelihood that the ported CarScanner short names map onto existing WiCAN shortnames. Use long names to make the mapping correctly.
+
+For merging new names: We use params.csv to map params from CarScanner names to WiCAN names. The script will skip adding params entries for any CarScanner shortname that has a mapping, so the mapping should be updated to include any existing WiCAN params that match CarScanner shortnames. The mapping is case-insensitive and will ignore spaces in the header, but should otherwise be formatted as "CarScanner,WiCAN" with no extra columns.
 
 This script is tested on profiles in profiles_all_dump.json (a full export of the CarScanner profile database) and may need more work to import other files, but should be a good start.
 '''
@@ -364,7 +367,7 @@ class PID_group(object):
         self.parameters = {}
         self.frame_count = None
 
-    def add_parameter(self, pid, params, name_mapping, params_definitive,
+    def add_parameter(self, pid, name_mapping, params_definitive,
                       params_uncertain, params_notfound, wican_pid_byte,
                       wican_pid_expr, wican_param_names):
         long_name = pid.get('NM', '')
@@ -404,10 +407,6 @@ class PID_group(object):
             params_uncertain[short_name] = entry
         else:
             params_notfound[short_name] = entry
-        # Only add to the merge-able params file if it is a new param (not an
-        # existing WiCAN param reached through name_mapping or a definitive match)
-        if snm_lc not in name_mapping and category != 'definitive':
-            params[short_name] = entry
         self.parameters[short_name] = expr
 
     def make_json_dict(self):
@@ -482,11 +481,22 @@ if not matches:
     sys.exit(1)
 if len(matches) > 1:
     print("Multiple profiles matched:")
-    for m in matches:
-        print(f"  {m['Name']} | {m.get('Description')}")
-    print(f"Using: {matches[0]['Name']}")
-
-profile = matches[0]
+    for i, m in enumerate(matches, 1):
+        print(f"  {i}. {m['Name']} | {m.get('Description')}")
+    while True:
+        try:
+            selection = input("Enter the number of the profile to use: ").strip()
+            if not selection:
+                raise ValueError
+            index = int(selection) - 1
+            if 0 <= index < len(matches):
+                profile = matches[index]
+                break
+            print(f"Please enter a number between 1 and {len(matches)}")
+        except ValueError:
+            print("Please enter a valid number")
+else:
+    profile = matches[0]
 pids = json.loads(profile['ProfilePIDs'])
 
 # Try to load mapping from params.csv in the same directory as this script
@@ -508,7 +518,6 @@ wican_profiles_dir = Path(__file__).parent.parent.parent / 'vehicle_profiles'
 wican_pid_byte, wican_pid_expr = build_pid_byte_map(wican_profiles_dir)
 
 groups = {}
-params = {}
 params_definitive = {}
 params_uncertain = {}
 params_notfound = {}
@@ -527,7 +536,7 @@ for pid in pids:
     key = (cmd, init)
     if key not in groups:
         groups[key] = PID_group(cmd, init)
-    groups[key].add_parameter(pid, params, name_mapping,
+    groups[key].add_parameter(pid, name_mapping,
                               params_definitive, params_uncertain,
                               params_notfound, wican_pid_byte,
                               wican_pid_expr, wican_param_names)
@@ -545,11 +554,8 @@ for group in groups.values():
     json_dict["pids"].append(group.make_json_dict())
 
 new_fname = Path(profile_match.replace(' ', '_').replace('/', '_') + '.json')
-new_params_fname = new_fname.with_suffix('.params.json')
 with open(new_fname, 'w') as f:
     json.dump(json_dict, f, indent=2)
-with open(new_params_fname, 'w') as f:
-    json.dump(params, f, indent=2)
 
 # Also write categorized params files:
 #   definitive: params that map to an existing WiCAN name by matching PID + byte
@@ -562,5 +568,5 @@ for suffix, data in (('definitive', params_definitive),
     with open(out_fname, 'w') as f:
         json.dump(data, f, indent=2)
 
-print(f"Wrote {new_fname} ({len(json_dict['pids'])} pid groups) and {new_params_fname} ({len(params)} params)")
+print(f"Wrote {new_fname} ({len(json_dict['pids'])} pid groups)")
 print(f"  definitive: {len(params_definitive)} | uncertain: {len(params_uncertain)} | notfound: {len(params_notfound)}")
