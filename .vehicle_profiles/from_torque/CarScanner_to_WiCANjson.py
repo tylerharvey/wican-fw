@@ -459,6 +459,28 @@ def pid_init_for(pid):
     return ';'.join(commands) + ';'
 
 
+def car_model_for(profile):
+    # Format "Make: Model" matching the existing WiCAN profile convention. When
+    # several makes are listed, use the first one.
+    brands = profile.get('Brands', [])
+    name = profile.get('Name', '').strip()
+    if brands:
+        return f"{brands[0]}: {name}"
+    return name
+
+
+def global_init_for(profile):
+    # The CarScanner InitSequence is newline separated (e.g. "ATZ\nATE0\nATH1\n
+    # ATSP6\nATS0\nATM0\nATAT1"). Convert it to the semicolon separated form the
+    # WiCAN init string expects, dropping the hard reset (ATZ).
+    seq = profile.get('InitSequence', '')
+    commands = [c.strip() for c in seq.replace(';', '\n').split('\n') if c.strip()]
+    commands = [c for c in commands if not c.upper().startswith('ATZ')]
+    if not commands:
+        return ''
+    return ';'.join(commands) + ';'
+
+
 # Main script logic
 if len(sys.argv) < 3:
     print("Usage: python CarScanner_to_WiCANjson.py <profiles_all_dump.json> \"<profile name substring>\" [--frame-count]")
@@ -541,7 +563,11 @@ for pid in pids:
                               params_notfound, wican_pid_byte,
                               wican_pid_expr, wican_param_names)
 
-json_dict = {"pids": []}
+json_dict = {"car_model": car_model_for(profile)}
+global_init = global_init_for(profile)
+if global_init:
+    json_dict["init"] = global_init
+json_dict["pids"] = []
 for group in groups.values():
     # Optional: append the expected response frame count as a trailing digit to
     # multi-frame pids. This is an ELM327 optimization and is not required.
